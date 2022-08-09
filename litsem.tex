@@ -53,6 +53,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Motivation for this lecture}
+\topic{Working with literature is an important fundamental skill in research}
 \begin{itemize}
 	\item You already know and do most of this anyway.
 	\item We make stuff \alert{explicit} here so that we can reason about it.
@@ -116,7 +117,6 @@ Also, be aware that working with literature is a \alert{continuous iterative pro
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Scientific literature as a communication device}
-%Scientific literature is a communication device
 \begin{itemize}
 	\item ``Stand on the shoulders of giants'': learn jargon, methods, evaluation approaches
 	\item Get inspiration and new ideas
@@ -126,36 +126,21 @@ Also, be aware that working with literature is a \alert{continuous iterative pro
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Process and extent}
-(Note that phases interact, no linear process)
-\begin{itemize}
-	\item Search: know approximate topic, get access to sources
-	\item Find: obtain useful sources, links
-	\item Read: identify and tap resources
-	\item Write: properly disclose all of the external material that you used
-\end{itemize}
-\albert{Rewrite. Cycle between ``search'' and ``triage'' / ``refine'' and ``document'' and, zoom in \& out, branch off, ...}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
 \frametitle{Qualities of sources}
 \small
-Sources include newspapers, TV shows, Web \cite{sacred-heart}. Sources for scientific use should provide:
+Sources generally may include newspapers, TV shows, Web etc. \cite{sacred-heart}. Sources for scientific use should provide:
 
 \begin{itemize}
 	\item Named authors
-	\item Reliable ``track records'': Renowned publication medium and authors, proper application of scientific processes
+	\item Reliable ``track records'': Renowned publication medium and authors, proper application of scientific processes (including citations)
 	\item Peer reviewed, Open Source, Open Data
 	\item Stable content and identifiers; versioning
 \end{itemize}
 (Note different emphases in different fields, e.g. mathematics, biology, physics)
 \end{frame}
-\albert{We don't talk about ``content quality'' (here) on purpose: this is hardest to assess, and we use paper metadata as a *quick* way to keep or discard material. Assessing paper quality *in depth* is a further topic.}
+\albert{Maybe rephrase title to segue better from earlier ``sci.lit.''}
 \note[itemize] {
 	\item ``Track record'' equals cold-start problem for newcomers
 	\item Ergo, newcomers should ensure they absolutely follow best practices in their field
@@ -165,6 +150,79 @@ Sources include newspapers, TV shows, Web \cite{sacred-heart}. Sources for scien
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Literature discovery cycle}
+Schematic process for obtaining sources:
+\begin{figure}
+	\includegraphics[width=0.4\textwidth]{fig/cycle.pdf}
+	\label{fig:cycle}
+\end{figure}
+\begin{itemize}
+	\item Perform a \alert{search} for the (approximate, assumed) topic
+	\item \alert{Triage} the results: Keep good ones, discard others
+	\item \alert{Document} what you found and why you kept or discarded it
+	\item Perform another search with \alert{refined} parameters
+	\item Repeat
+\end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Efficient triage}
+Problem: we cannot read every detail of every paper to determine relevance.
+
+Solution: \alert{stepwise triage}. Perform simple checks on every search result, discard outliers at the earliest possible stage.
+\begin{itemize}
+	\item Title
+	\item Abstract
+	\item Publication format (poster, extended abstract, paper, article, book)
+	\item Number and quality of references
+	\item Conference or workshop venue, journal
+	\item Authors, institutions, year of publication, citation count
+\end{itemize}
+→ A paper that we kept this far may be considered in depth.
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Refinement approaches}
+Problem: Naïve search may yield too few / many results
+
+Solutions to try out:
+\begin{itemize}
+	\item Choose (combination of) search terms, use proper terminology
+	\item Sort and filter results
+	\item ``Advanced'' search for specific properties
+	\item Traverse author/institution/conference relationships: metadata is hyperlinked
+\end{itemize}
+Sometimes, grunt work is the way to go: skim / read a lot, throw away a lot
+\end{frame}
+\note[itemize] {
+	\item A worked live example might be in order here.
+	\item E.g. limit publication dates, search in title vs full text, traverse single conference's or author's history
+	\item Don't run away yet, we need to talk about recording the results!
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+\frametitle{Search platforms}
+\small
+\begin{itemize}
+	\item Typical first try: Web search
+	\item Problem: does not turn up many ``proper'' sources
+	\item Recommendation: use publishers' databases
+	\item E.g. \href{https://dl.acm.org/}{ACM Digital Library}, \href{https://ieeexplore.ieee.org/}{IEEE Xplore}, \href{https://link.springer.com/}{Springer Link} (institutional login required, e.g \href{https://uaccess.univie.ac.at/}{u:access})
+\end{itemize}
+\end{frame}
+\note[itemize] {
+ 	\item Google Scholar does find proper sources, but often alternative / ``inofficially'' shared versions too
+ 	\item Workarounds exist for users with no institutional affiliation, e.g. public library computers
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -179,42 +237,20 @@ Sources include newspapers, TV shows, Web \cite{sacred-heart}. Sources for scien
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{Techniques for searching}
-\small
-\begin{itemize}
-	\item Typical first try: Web search
-	\item Problem: does not turn up many ``proper'' sources
-	\item Recommendation: use publishers' databases
-	\item E.g. \href{https://dl.acm.org/}{ACM Digital Library}, \href{https://ieeexplore.ieee.org/}{IEEE Xplore}, \href{https://link.springer.com/}{Springer Link} (institutional login required, e.g \href{https://uaccess.univie.ac.at/}{u:access})
-\end{itemize}
-\alert{Remember:} working with literature is an iterative process
-\end{frame}
-\note[itemize] {
- 	\item Google Scholar does find proper sources, but often alternative / ``inofficially'' shared versions too
- 	\item Workarounds exist for users with no institutional affiliation, e.g. public library computers
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-\frametitle{Refine your search}
-Naïve search may yield too few / many results
+\frametitle{Practical considerations}
+Usually, we perform multiple literature discovery cycles in parallel (no clear breadth/depth-first search):
 \begin{itemize}
-	\item Choose (combination of) search terms, use jargon
-	\item Sort and filter results
-	\item ``Advanced'' search for specific properties
-	\item Traverse author/institution/conference relationships: metadata is hyperlinked
+	\item Each result is a potential point for branching off
+	\item Switch between them as you like
+	\item ``Zoom in'' (or out) on various parameters: follow (sub)topics, authors and teams, conferences, ...
+	\item Parallel cycles yield further ideas for refinement
 \end{itemize}
-Sometimes, grunt work is the way to go: skim / read a lot, throw away a lot
 \end{frame}
-\note[itemize] {
- 	\item A worked live example might be in order here.
- 	\item E.g. limit publication dates, search in title vs full text, traverse single conference's or author's history
- 	\item Don't run away yet, we need to talk about recording the results!
-}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
@@ -229,14 +265,6 @@ Sometimes, grunt work is the way to go: skim / read a lot, throw away a lot
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-\frametitle{WIP --- Classify what you found}
-\framesubtitle{Or: prune your reading list to manageable length}
-\topic{Searching yields more material than one can ever handle}
-\topic{Select quickly from metadata, abstract}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
